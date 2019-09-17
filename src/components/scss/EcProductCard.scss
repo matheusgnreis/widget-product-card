@@ -3,6 +3,19 @@
   padding-bottom: .1rem;
   margin-bottom: 0;
 
+  .stamp-offer {
+    background-color: var(--success);
+    padding: 5px;
+    color: #fff;
+    width: 50px;
+    letter-spacing: .12em;
+    font-size: 13px;
+    position: absolute;
+    line-height: 17px;
+    z-index: 9999;
+    right: 0px
+  }
+
   &__link:hover h3 {
     text-decoration: underline;
   }

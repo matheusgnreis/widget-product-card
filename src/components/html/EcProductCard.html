@@ -1,6 +1,13 @@
 <div class="ec-product-card">
   <fade-transition :duration="700">
     <section v-if="body._id">
+      <div v-if="onPromotion(body)" class="stamp-offer border">
+        <template>
+          <div class="text-center">
+            <span>-<b>{{ Math.round(((body.base_price - body.price) * 100) / body.base_price) }}</b>%</span>
+          </div>
+        </template>
+      </div>
       <a
         class="ec-product-card__link"
         :href="`/${body.slug}`"
