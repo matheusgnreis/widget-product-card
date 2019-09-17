@@ -1,4 +1,4 @@
-import { _config, name, inStock, onPromotion } from '@ecomplus/utils'
+import { _config, name, inStock, onPromotion, price } from '@ecomplus/utils'
 import { store } from '@ecomplus/client'
 import dictionary from '@ecomplus/widget-product/src/lib/dictionary'
 import EcImage from '@ecomplus/widget-product/src/components/EcImage.vue'
@@ -53,6 +53,7 @@ export default {
     name,
     inStock,
     onPromotion,
+    price, 
 
     fetchItem () {
       if (this.productId) {

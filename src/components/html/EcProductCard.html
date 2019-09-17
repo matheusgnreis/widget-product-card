@@ -3,8 +3,8 @@
     <section v-if="body._id">
       <div v-if="onPromotion(body)" class="ec-product-card__offer-stamp">
         <template>
-          <div class="text-center">
-            <span>-<b>{{ Math.round(((body.base_price - body.price) * 100) / body.base_price) }}</b>%</span>
+          <div>
+            <span>-<b>{{ Math.round(((body.base_price - price(body)) * 100) / body.base_price) }}</b>%</span>
           </div>
         </template>
       </div>
